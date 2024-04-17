@@ -75,7 +75,7 @@ body {
   padding: 25px 0;
   background-color: rgb(255, 171, 4);
 }
-.header-list {
+.nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
