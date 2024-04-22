@@ -26,7 +26,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
   font-style: normal;
@@ -40,31 +40,15 @@ body {
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .text {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 25px;
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 25px 0;
-}
-
-.link {
-  padding: 15px;
-  border: 2px solid #0c082d;
-  border-radius: 15px;
-  cursor: pointer;
-  display: inline-block;
+  margin-bottom: 15px;
 }
 
 .hidden {
@@ -72,30 +56,33 @@ body {
 }
 
 .header {
-  padding: 25px 0;
+  padding: 15px 0;
   background-color: rgb(255, 171, 4);
 }
 .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header-item {
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .navigation {
-  padding: 25px 0;
+  padding: 15px 0;
   background-color: #ffc95c;
 }
-.navigation-title {
-}
 .navigation-list {
-  gap: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .navigation-link {
+  padding: 10px;
+  border: 2px solid #0c082d;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block;
 }
 .navigation-link--active {
   background-color: rgb(110 114 150);
@@ -104,28 +91,31 @@ body {
 }
 
 .description {
-  padding: 25px 0;
+  padding: 15px 0;
   background-color: rgb(110 114 150);
 }
-.precourse {
+
+.lesson-navigation--list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.precourse-title {
+.lesson-navigation--link {
+  padding: 10px;
+  border: 2px solid #0c082d;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block;
 }
-.precourse-navigation--list {
-}
-.precourse-navigation--item {
-}
-.precourse-navigation--link-active {
+.lesson-navigation--link-active {
   background-color: rgb(255 171 4);
   color: rgb(255 0 0);
   border: 2px solid rgb(255 0 0);
 }
-.precourse-content--list {
-  padding: 25px 0;
+.lesson-list {
+  padding: 15px 0;
 }
-.precourse-description--list {
-}
-.precourse-content--item,
-.lesson-description--item {
-  margin-bottom: 25px;
+.lesson-content--item {
+  margin-bottom: 15px;
 }

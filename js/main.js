@@ -11,38 +11,36 @@ navigationLists.forEach((navigationList) =>
       curentNavigationLink.classList.add('navigation-link--active')
     );
 
-    const descriptionItems = document.querySelectorAll('.description-item');
-    descriptionItems.forEach((descriptionItem) => descriptionItem.classList.add('hidden'));
+    const lessonItems = document.querySelectorAll('.lesson-item');
+    lessonItems.forEach((lessonItem) => lessonItem.classList.add('hidden'));
     const id = event.target.getAttribute('href');
     const curentblock = document.querySelector(`${id}`);
     curentblock.classList.remove('hidden');
 
     curentblock
-      .querySelectorAll('.list')
-      .forEach((item) => item.firstElementChild.firstElementChild.classList.add('precourse-navigation--link-active'));
-    curentblock
-      .querySelectorAll('.description--list')
-      .forEach((item) => item.firstElementChild.classList.remove('hidden'));
+      .querySelectorAll('.lesson-navigation--list')
+      .forEach((item) => item.firstElementChild.firstElementChild.classList.add('lesson-navigation--link-active'));
+    curentblock.querySelectorAll('.lesson-list').forEach((item) => item.firstElementChild.classList.remove('hidden'));
   })
 );
 
-const testNavigationLists = document.querySelectorAll('.list');
+const lessonNavigationLists = document.querySelectorAll('.lesson-navigation--list');
 
-testNavigationLists.forEach((testNavigationList) =>
-  testNavigationList.addEventListener('click', function (event) {
-    const precourseNavigationLinks = document.querySelectorAll('.link');
-    precourseNavigationLinks.forEach((precourseDescriptionItem) =>
-      precourseDescriptionItem.classList.remove('precourse-navigation--link-active')
+lessonNavigationLists.forEach((lessonNavigationList) =>
+  lessonNavigationList.addEventListener('click', function (event) {
+    const lessonNavigationLinks = document.querySelectorAll('.lesson-navigation--link');
+    lessonNavigationLinks.forEach((lessonNavigationLink) =>
+      lessonNavigationLink.classList.remove('lesson-navigation--link-active')
     );
 
     const curentAttrribute = event.target.getAttribute('href');
-    const curentPrecourseNavigationItems = document.querySelectorAll(`[href='${curentAttrribute}']`);
-    curentPrecourseNavigationItems.forEach((curentPrecourseNavigationItem) =>
-      curentPrecourseNavigationItem.classList.add('precourse-navigation--link-active')
+    const curentLessoneNavigationItems = document.querySelectorAll(`[href='${curentAttrribute}']`);
+    curentLessoneNavigationItems.forEach((curentLessoneNavigationItem) =>
+      curentLessoneNavigationItem.classList.add('lesson-navigation--link-active')
     );
 
-    const precourseContentItems = document.querySelectorAll('.item');
-    precourseContentItems.forEach((precourseContentItem) => precourseContentItem.classList.add('hidden'));
+    const lessoneContentItems = document.querySelectorAll('.lesson-content--item');
+    lessoneContentItems.forEach((lessoneContentItem) => lessoneContentItem.classList.add('hidden'));
     const id = event.target.getAttribute('href');
     const curentblock = document.querySelector(`${id}`);
     curentblock.classList.remove('hidden');
