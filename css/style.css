@@ -84,6 +84,19 @@ body {
   border-radius: 15px;
   cursor: pointer;
   display: inline-block;
+  transition:
+    background-color 0.3s ease-in,
+    border 0.3s ease-in,
+    color 0.3s ease-in;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  background-color: #afa7b2;
+  border: 2px solid #00457e;
+  color: #00457e;
+}
+.navigation-link:active {
+  transform: translate(0%, 1px);
 }
 .navigation-link--active {
   background-color: #afa7b2;
@@ -108,6 +121,19 @@ body {
   border-radius: 15px;
   cursor: pointer;
   display: inline-block;
+  transition:
+    background-color 0.3s ease-in,
+    border 0.3s ease-in,
+    color 0.3s ease-in;
+}
+.lesson-navigation--link:hover,
+.lesson-navigation--link:focus {
+  background-color: #afa7b2;
+  border: 2px solid #00457e;
+  color: #00457e;
+}
+.lesson-navigation--link:active {
+  transform: translate(0%, 1px);
 }
 .lesson-list {
   padding: 15px 0;
