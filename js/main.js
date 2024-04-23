@@ -19,7 +19,7 @@ navigationLists.forEach((navigationList) =>
 
     curentblock
       .querySelectorAll('.lesson-navigation--list')
-      .forEach((item) => item.firstElementChild.firstElementChild.classList.add('lesson-navigation--link-active'));
+      .forEach((item) => item.firstElementChild.firstElementChild.classList.add('navigation-link--active'));
     curentblock.querySelectorAll('.lesson-list').forEach((item) => item.firstElementChild.classList.remove('hidden'));
   })
 );
@@ -30,13 +30,13 @@ lessonNavigationLists.forEach((lessonNavigationList) =>
   lessonNavigationList.addEventListener('click', function (event) {
     const lessonNavigationLinks = document.querySelectorAll('.lesson-navigation--link');
     lessonNavigationLinks.forEach((lessonNavigationLink) =>
-      lessonNavigationLink.classList.remove('lesson-navigation--link-active')
+      lessonNavigationLink.classList.remove('navigation-link--active')
     );
 
     const curentAttrribute = event.target.getAttribute('href');
     const curentLessoneNavigationItems = document.querySelectorAll(`[href='${curentAttrribute}']`);
     curentLessoneNavigationItems.forEach((curentLessoneNavigationItem) =>
-      curentLessoneNavigationItem.classList.add('lesson-navigation--link-active')
+      curentLessoneNavigationItem.classList.add('navigation-link--active')
     );
 
     const lessoneContentItems = document.querySelectorAll('.lesson-content--item');

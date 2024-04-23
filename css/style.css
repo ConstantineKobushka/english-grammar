@@ -31,6 +31,7 @@ body {
   font-weight: 700;
   font-style: normal;
   font-optical-sizing: auto;
+  color: #1c252c;
 }
 
 .container {
@@ -57,7 +58,7 @@ body {
 
 .header {
   padding: 15px 0;
-  background-color: rgb(255, 171, 4);
+  background-color: #bbc6c8;
 }
 .nav-list {
   display: flex;
@@ -69,7 +70,7 @@ body {
 
 .navigation {
   padding: 15px 0;
-  background-color: #ffc95c;
+  background-color: #e5e3e4;
 }
 .navigation-list {
   display: flex;
@@ -85,14 +86,14 @@ body {
   display: inline-block;
 }
 .navigation-link--active {
-  background-color: rgb(110 114 150);
-  color: rgb(255 0 0);
-  border: 2px solid rgb(255 0 0);
+  background-color: #afa7b2;
+  border: 2px solid #00457e;
+  color: #00457e;
 }
 
 .description {
   padding: 15px 0;
-  background-color: rgb(110 114 150);
+  background-color: #ddbeaa;
 }
 
 .lesson-navigation--list {
@@ -107,11 +108,6 @@ body {
   border-radius: 15px;
   cursor: pointer;
   display: inline-block;
-}
-.lesson-navigation--link-active {
-  background-color: rgb(255 171 4);
-  color: rgb(255 0 0);
-  border: 2px solid rgb(255 0 0);
 }
 .lesson-list {
   padding: 15px 0;
