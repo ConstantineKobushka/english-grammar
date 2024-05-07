@@ -34,6 +34,36 @@ body {
   color: #1c252c;
 }
 
+.curent-element {
+  /* animation-name: scale;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; */
+  animation: scale 2s linear infinite normal running 1s forwards;
+}
+.curent-element:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    background-color: #afa7b2;
+    border-color: #00457e;
+    color: #00457e;
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .container {
   max-width: 1450px;
   padding: 0 10px;
