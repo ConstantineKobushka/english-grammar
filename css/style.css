@@ -194,11 +194,11 @@ body {
   padding: 0 25px;
 }
 .slider-text {
-  font-size: 32px;
   text-align: center;
 }
 .slider-img {
   width: 200px;
+  margin-bottom: 20px;
 }
 .button {
   position: absolute;
