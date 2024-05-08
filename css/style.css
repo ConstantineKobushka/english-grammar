@@ -171,3 +171,54 @@ body {
 .lesson-content--item {
   margin-bottom: 15px;
 }
+
+.wrapper {
+  max-width: 800px;
+  height: 400px;
+  margin: 0px auto;
+  position: relative;
+}
+.slider {
+  height: 100%;
+}
+.slidet-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgb(182, 203, 222);
+  padding: 0 25px;
+}
+.slider-text {
+  font-size: 32px;
+  text-align: center;
+}
+.slider-img {
+  width: 200px;
+}
+.button {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 10px 20px;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ddbeaa;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+.button:hover {
+  background-color: #da9a70;
+}
+
+.hidden {
+  display: none;
+}
