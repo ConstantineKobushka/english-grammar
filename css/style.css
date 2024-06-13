@@ -97,6 +97,19 @@ body {
   flex-wrap: wrap;
   gap: 10px;
 }
+.nav-link span {
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.nav-link {
+  transition: color 0.2s ease-in;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #00457e;
+}
 
 .navigation {
   padding: 15px 0;
